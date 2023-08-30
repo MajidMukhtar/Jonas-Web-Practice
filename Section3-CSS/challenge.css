@@ -21,6 +21,19 @@ body {
   text-align: center;
   background-color: rgb(241, 236, 236);
   padding: 20px 0;
+  position: relative;
+}
+
+/* For sale */
+.title::before {
+  content: "Sale";
+  color: #fff;
+  background-color: red;
+  font-size: 14px;
+  padding: 7px 15px;
+  position: absolute;
+  top: -15px;
+  left: -30px;
 }
 
 .product-img {
@@ -61,6 +74,43 @@ body {
 .prod-details {
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+ul .box {
+  list-style: none;
+}
+
+.box {
+  height: 25px;
+  width: 25px;
+  border: 2px solid black;
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.brown {
+  background-color: burlywood;
 }
 
 .detail-list {

@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  width: 700px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -22,6 +22,16 @@ body {
 
 .post-header {
   margin-bottom: 40px;
+  position: relative;
+}
+
+button {
+  position: absolute;
+  padding: 20px;
+  font-size: 20px;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 
 aside {
@@ -33,6 +43,29 @@ aside {
 
 article {
   margin-bottom: 60px;
+}
+
+/* Formatting book icon in title */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 10px;
+}
+
+/* Adding "top" in header */
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "Top";
+  background-color: yellow;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 10px;
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: -10px;
 }
 
 h1,
@@ -110,12 +143,6 @@ li:nth-child(2) {
 a:link {
   color: #1098db;
   text-decoration: none;
-  margin: 10px;
-  display: inline-block;
-}
-
-a:link:last-chil(d) {
-  margin-right: none;
 }
 
 a:visited {
