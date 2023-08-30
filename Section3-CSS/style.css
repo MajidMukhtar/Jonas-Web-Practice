@@ -110,6 +110,12 @@ li:nth-child(2) {
 a:link {
   color: #1098db;
   text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+}
+
+a:link:last-chil(d) {
+  margin-right: none;
 }
 
 a:visited {
