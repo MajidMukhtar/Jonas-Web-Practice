@@ -1,105 +1,137 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: sans-serif;
-  color: #444444;
+    font-family: sans-serif;
+    color: #444444;
 }
 
 .container {
-  width: 700px;
-  margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .main-header {
-  background-color: #f8f8f8;
-  padding: 20px;
-  margin-bottom: 40px;
-  height: 80px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 40px;
+    height: 80px;
 }
 
 .post-header {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    padding: 20px;
+    font-size: 20px;
+    bottom: 10px;
+    right: 10px;
 }
 
 aside {
-  background-color: #f8f8f8;
-  border: 5px solid #1098db;
-  padding: 50px 0;
-  width: 500px;
+    background-color: #f8f8f8;
+    border: 5px solid #1098db;
+    padding: 50px 0;
+    width: 500px;
 }
 
 article {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+/* Formatting book icon in title */
+h1::first-letter {
+    font-style: normal;
+    margin-right: 10px;
+}
+
+/* Adding "top" in header */
+h2 {
+    position: relative;
+}
+
+h2::after {
+    content: "Top";
+    background-color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: -10px;
 }
 
 h1,
 h2,
 h3 {
-  color: #1098db;
+    color: #1098db;
 }
 
 h1 {
-  font-size: 26px;
-  text-transform: uppercase;
-  font-style: italic;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
 }
 
 h2 {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 h4 {
-  text-align: center;
-  font-size: 25px;
+    text-align: center;
+    font-size: 25px;
 }
 
 p {
-  font-size: 22px;
-  line-height: 1.5;
-  margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 li {
-  font-size: 16px;
-  margin-left: 30px;
-  margin-bottom: 10px;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-bottom: 10px;
 }
 
 footer p {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 #author {
-  font-style: italic;
+    font-style: italic;
 }
 
 .related-author {
-  font-style: italic;
-  font-size: 17px;
+    font-style: italic;
+    font-size: 17px;
 }
 
 .related {
-  list-style: none;
+    list-style: none;
 }
 
 li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 li:first-child {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 li:nth-child(2) {
-  color: red;
+    color: red;
 }
 
 /* li:last-child {
@@ -108,26 +140,26 @@ li:nth-child(2) {
 
 /* Styling hyperlinks */
 a:link {
-  color: #1098db;
-  text-decoration: none;
+    color: #1098db;
+    text-decoration: none;
 }
 
 a:visited {
-  color: #1098db;
+    color: #1098db;
 }
 
 a:hover {
-  color: orangered;
-  font-weight: bold;
-  text-decoration: underline wavy orangered;
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline wavy orangered;
 }
 
 a:active {
-  background-color: black;
-  font-style: italic;
+    background-color: black;
+    font-style: italic;
 }
 
 .post-img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
