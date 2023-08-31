@@ -34,6 +34,7 @@ body {
   position: absolute;
   top: -15px;
   left: -30px;
+  letter-spacing: 4px;
 }
 
 .product-img {
